@@ -1,1 +1,10 @@
-export openstack cloud
+export OS_AUTH_URL=https://test.com:5000
+export OS_PROJECT_ID=d4ad88sfsdfsdf4525b4dcc68wawewe23sdf32434sfsdfdsf
+export OS_PROJECT_NAME="devops"
+export OS_USER_DOMAIN_NAME="Cloud"
+export OS_PROJECT_DOMAIN_ID="4dfdfdfd4c85dbdsfgdfdfgdfg7c529088"
+export OS_USERNAME="username"
+export OS_PASSWORD="your password"
+export OS_REGION_NAME="us-east-1"
+export OS_INTERFACE=public
+export OS_IDENTITY_API_VERSION=3
