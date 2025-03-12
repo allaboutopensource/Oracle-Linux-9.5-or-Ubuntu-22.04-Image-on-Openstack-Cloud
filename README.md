@@ -27,4 +27,4 @@ In this method packer create an temporary image using external source image with
 Create server with this image and ssh to the server to make changes like cloud-config. 
 Once changes made then stop the server and create image from that server instance. Finally delete the temporary packer image from openstack cloud. 
 
-
+Note: You can avoid the ssh_keypair_name and private-key.pem parameter in the packer HCL file . Packer will generate a temporary keypair and use this to ssh to the machine during the process of image creation. 
