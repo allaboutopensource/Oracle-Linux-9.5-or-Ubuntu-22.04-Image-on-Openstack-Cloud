@@ -22,7 +22,7 @@ source "openstack" "oracle-linux" {
   insecure             = "true"
   ssh_username         = "cloud-user"
   ssh_keypair_name     = var.ssh_keypair_name
-  ssh_private_key_file = "itops-infra-project.pem"
+  ssh_private_key_file = "devops-project.pem"
   security_groups      = [var.security_groups]
   use_floating_ip      = true
 }
