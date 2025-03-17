@@ -1,0 +1,18 @@
+Bigfix client installation 
+
+
+#!/bin/bash
+
+sudo mkdir -p /tmp/bigfix-install
+cd /tmp/bigfix-install
+wget http://repo-images.internal/bigfix/ubuntu/BESAgent-11.0.3.82-ubuntu18.amd64.deb
+wget http://repos-images.internal/bigfix/ubuntu/actionsite.afxm
+wget http://repo-images.internal/bigfix/ubuntu/besclient.config
+
+# Install BigFix Agent
+sudo mkdir -p /etc/opt/BESClient
+sudo cp actionsite.afxm /etc/opt/BESClient/actionsite.afxm
+sudo dpkg -i BESAgent-11.0.3.82-ubuntu18.amd64.deb
+sudo systemctl enable besclient
+cd ..
+rm -rf /tmp/bigfix-install
